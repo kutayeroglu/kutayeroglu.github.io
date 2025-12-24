@@ -28,4 +28,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Research & Teaching Assistant at Bogazici University. Also, pursuing a M.Sc in Computer Engineering in the same department. Graduated from Koc University 2022 Computer Engineering Bachelor.
+Research & Teaching Assistant at Bogazici University, currently pursuing an M.Sc. in Computer Engineering in the same department. Graduated with a B.Sc. in Computer Engineering from Koc University in 2022.
