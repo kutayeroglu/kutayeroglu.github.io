@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research & Teaching Assistant at Bogazici University. Research interest: Self-supervised pre-training methods
+subtitle: "Research & Teaching Assistant at Bogazici University. Research interest: Self-supervised pre-training methods"
 
 profile:
   align: right
