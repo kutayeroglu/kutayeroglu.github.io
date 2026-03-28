@@ -1,5 +1,13 @@
 {% assign repo_url = include.repository | split: '/' %}
-{% if site.data.repositories.github_users contains repo_url.first %}
+{% assign repo_owner = repo_url[0] %}
+{% assign repo_name = repo_url[1] %}
+
+{% if repo_url.size == 1 %}
+  {% assign repo_owner = site.data.repositories.github_users.first %}
+  {% assign repo_name = include.repository %}
+{% endif %}
+
+{% if site.data.repositories.github_users contains repo_owner %}
   {% assign show_owner = false %}
 {% else %}
   {% assign show_owner = true %}
@@ -32,16 +40,16 @@
 {% endif %}
 
 <div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
+  <a href="https://github.com/{{ repo_owner }}/{{ repo_name }}">
     <img
       class="only-light w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+      alt="{{ repo_name }}"
+      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_owner }}&repo={{ repo_name }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
     >
     <img
       class="only-dark w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+      alt="{{ repo_name }}"
+      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_owner }}&repo={{ repo_name }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
     >
   </a>
 </div>
