@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "Research & Teaching Assistant at Bogazici University. Research interest: Self-supervised pre-training methods"
+subtitle: ""
 
 profile:
   align: right
@@ -28,4 +28,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Research & Teaching Assistant at Bogazici University, currently pursuing an M.Sc. in Computer Engineering in the same department. Graduated with a B.Sc. in Computer Engineering from Koc University in 2022.
+I work as a Graduate Research & Teaching Assistant at [Computer Engineering Department at Boğaziçi University](https://cmpe.bogazici.edu.tr/). Currently, I am pursuing a M.Sc. degree in Computer Engineering while serving as a teaching assistant for [Project Development in Software Engineering](https://cmpe.bogazici.edu.tr/courses/cmpe354/) course.
+
+My objective is to advance 'intelligence' of computers to uncover more of the unknowns of our world. Currently, my work focuses on self-supervised representation learning as a pathway to building more scalable and perceptively aware intelligent systems.
