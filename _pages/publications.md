@@ -13,8 +13,8 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
-<div class="publications">
+{% comment %}
+  Add entries to _bibliography/papers.bib, then add a div.publications block with the bibliography tag when you want a rendered list.
+{% endcomment %}
 
-{% bibliography %}
-
-</div>
+<p>Publications will be listed here as they become available.</p>
