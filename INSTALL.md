@@ -1,6 +1,6 @@
 # Installing and Deploying
 
-<!--ts-->
+
 
 - [Installing and Deploying](#installing-and-deploying)
   - [Recommended Approach](#recommended-approach)
@@ -15,12 +15,12 @@
     - [For project pages](#for-project-pages)
     - [Enabling automatic deployment](#enabling-automatic-deployment)
     - [Manual deployment to GitHub Pages](#manual-deployment-to-github-pages)
-    - [Deploy on <a href="https://www.netlify.com/" rel="nofollow">Netlify</a>](https://www.netlify.com/)
+    - [Deploy on Netlify](https://www.netlify.com/)
     - [Deployment to another hosting server (non GitHub Pages)](#deployment-to-another-hosting-server-non-github-pages)
     - [Deployment to a separate repository (advanced users only)](#deployment-to-a-separate-repository-advanced-users-only)
   - [Upgrading from a previous version](#upgrading-from-a-previous-version)
 
-<!--te-->
+
 
 ## Recommended Approach
 
@@ -32,7 +32,7 @@ The recommended approach for using **al-folio** is to first create your own site
 4. Wait until the GitHub action with subtitle `Deploy site` finishes (check your repository **Actions** tab), which takes ~4 min. Now, in addition to the `main` branch, your repository has a newly built `gh-pages` branch.
 5. Finally, in the repository page go to `Settings -> Pages -> Build and deployment`, make sure that `Source` is set to `Deploy from a branch` and set the branch to `gh-pages` (NOT to main).
 6. Wait until the GitHub action `pages-build-deployment` finishes (check your repository **Actions** tab), which takes ~45s, then simply navigate to `https://<your-github-username>.github.io` in your browser. At this point you should see a copy of the theme's [demo website](https://alshedivat.github.io/al-folio/).
-   After everything is set up, you can download the repository to your machine and start customizing it. To do so, run the following commands:
+  After everything is set up, you can download the repository to your machine and start customizing it. To do so, run the following commands:
 
 ```bash
 $ git clone git@github.com:<your-username>/<your-repo-name>.git
@@ -117,7 +117,7 @@ For example, when you open the repository with Visual Studio Code (VSCode), it p
 
 For a hands-on walkthrough of running al-folio locally without using Docker, check out [this cool blog post](https://george-gca.github.io/blog/2022/running-local-al-folio/) by one of the community members!
 
-Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (_hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)_), and also [Python](https://www.python.org/) and [pip](https://pypi.org/project/pip/) (_hint: for ease of managing python packages, consider using a virtual environment, like [venv](https://docs.python.org/pt-br/3/library/venv.html) or [conda](https://docs.conda.io/en/latest/)_).
+Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (*hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)*), and also [Python](https://www.python.org/) and [pip](https://pypi.org/project/pip/) (*hint: for ease of managing python packages, consider using a virtual environment, like [venv](https://docs.python.org/pt-br/3/library/venv.html) or [conda*](https://docs.conda.io/en/latest/)).
 
 ```bash
 $ bundle install
@@ -167,18 +167,16 @@ If you need to manually re-deploy your website to GitHub pages, go to Actions, c
 1. [Use this template -> Create a new repository](https://github.com/new?template_name=al-folio&template_owner=alshedivat).
 2. Netlify: **Add new site** -> **Import an existing project** -> **GitHub** and give Netlify access to the repository you just created.
 3. Netlify: In the deploy settings
-
-   - Set **Branch to deploy** to `main`
-   - **Base directory** is empty
-   - Set **Build command** to `sed -i "s/^\(baseurl: \).*$/baseurl:/" _config.yml && bundle exec jekyll build`
-   - Set **Publish directory** to `_site`
-
+  - Set **Branch to deploy** to `main`
+  - **Base directory** is empty
+  - Set **Build command** to `sed -i "s/^\(baseurl: \).*$/baseurl:/" _config.yml && bundle exec jekyll build`
+  - Set **Publish directory** to `_site`
 4. Netlify: Add the following two **environment variables**
-
-   - | Key            | Value                                                                                  |
-     | -------------- | -------------------------------------------------------------------------------------- |
-     | `JEKYLL_ENV`   | `production`                                                                           |
-     | `RUBY_VERSION` | set to the Ruby version found in `.github/workflows/deploy.yml` (for example, `3.3.5`) |
+  - 
+  | Key            | Value                                                                                  |
+  | -------------- | -------------------------------------------------------------------------------------- |
+  | `JEKYLL_ENV`   | `production`                                                                           |
+  | `RUBY_VERSION` | set to the Ruby version found in `.github/workflows/deploy.yml` (for example, `3.3.5`) |
 
 5. Netlify: Click **Deploy** and wait for the site to be published. If you want to use your own domain name, follow the steps in [this documentation](https://docs.netlify.com/domains-https/custom-domains/).
 
@@ -233,7 +231,7 @@ The quote below is taken directly from the [jekyll configuration docs](https://j
 If `$HOME/repo/publishing-source` contains files that you want jekyll to leave untouched, specify them under `keep_files` in `_config.yml`.
 In its default configuration, al-folio will copy the top-level `README.md` to the publishing source. If you want to change this behavior, add `README.md` under `exclude` in `_config.yml`.
 
-**Note:** Do _not_ run `jekyll clean` on your publishing source repo as this will result in the entire directory getting deleted, irrespective of the content of `keep_files` in `_config.yml`.
+**Note:** Do *not* run `jekyll clean` on your publishing source repo as this will result in the entire directory getting deleted, irrespective of the content of `keep_files` in `_config.yml`.
 
 ## Upgrading from a previous version
 
