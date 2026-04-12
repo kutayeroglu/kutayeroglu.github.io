@@ -1,7 +1,7 @@
 {
   "meta": {
-    "source": "pinned",
-    "updated_at": "2026-04-12T17:24:19.822525+00:00"
+    "source": "manual",
+    "updated_at": "2026-04-12T17:27:41.658674+00:00"
   },
   "repositories": [
     {
@@ -13,7 +13,7 @@
       "stargazers_count": 1,
       "forks_count": 0,
       "language": "Python",
-      "language_color": "#3572A5"
+      "language_color": null
     },
     {
       "name": "antibiomimetic-texture-vs-shape",
@@ -24,7 +24,7 @@
       "stargazers_count": 0,
       "forks_count": 0,
       "language": "Jupyter Notebook",
-      "language_color": "#DA5B0B"
+      "language_color": null
     }
   ]
 }
