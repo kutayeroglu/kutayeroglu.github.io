@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          description: "Courses I assist with at Boğaziçi University [Computer Engineering Department](https://cmpe.bogazici.edu.tr/).",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
