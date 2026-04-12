@@ -30,21 +30,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/blog/";
-              },
-            },{id: "post-a-post-with-plotly-js",
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
@@ -407,12 +400,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-started-pursuing-my-m-sc-in-computer-engineering-at-bogazici-university",
+      },{id: "news-i-started-pursuing-my-m-sc-in-computer-engineering-at-bogazici-university",
           title: 'I started pursuing my M.Sc. in Computer Engineering at Bogazici University.',
           description: "",
           section: "News",},{id: "news-i-started-working-as-a-graduate-research-and-teaching-assistant-at-the-computer-engineering-department-at-bogazici-university",
