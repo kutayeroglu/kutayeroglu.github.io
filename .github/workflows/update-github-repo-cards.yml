@@ -1,0 +1,47 @@
+name: Update GitHub repo cards data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * 1"
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "_data/repositories.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Refresh _data/github_repo_cards.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/update_github_repo_cards.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/github_repo_cards.json
+          if git diff --staged --quiet; then
+            echo "No changes to repo cards data."
+          else
+            git commit -m "chore: refresh GitHub repo cards data"
+            git push
+          fi

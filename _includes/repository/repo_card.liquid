@@ -1,0 +1,42 @@
+{% assign r = include.repo %}
+<div class="github-repo-card">
+  <a
+    class="github-repo-card__link"
+    href="{{ r.html_url }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div class="github-repo-card__owner text-muted small text-truncate">{{ r.owner }} / {{ r.name }}</div>
+    <div class="github-repo-card__title text-truncate">{{ r.name }}</div>
+    <p class="github-repo-card__desc">
+      {% if r.description != '' %}
+        {{ r.description }}
+      {% else %}
+        <span class="text-muted">No description</span>
+      {% endif %}
+    </p>
+    <div class="github-repo-card__meta">
+      {% if r.language %}
+        <span class="github-repo-card__lang">
+          <span
+            class="github-repo-card__lang-dot{% unless r.language_color %} github-repo-card__lang-dot--fallback{% endunless %}"
+            {% if r.language_color %}
+              style="background-color: {{ r.language_color }};"
+            {% endif %}
+          ></span>
+          {{ r.language }}
+        </span>
+      {% endif %}
+      <span class="github-repo-card__stat" title="Stars">
+        <i class="fa-solid fa-star fa-sm"></i>
+        {{ r.stargazers_count }}
+      </span>
+      {% if r.forks_count > 0 %}
+        <span class="github-repo-card__stat" title="Forks">
+          <i class="fa-solid fa-code-fork fa-sm"></i>
+          {{ r.forks_count }}
+        </span>
+      {% endif %}
+    </div>
+  </a>
+</div>

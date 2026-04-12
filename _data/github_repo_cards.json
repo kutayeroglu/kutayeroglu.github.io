@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "source": "pinned",
+    "updated_at": "2026-04-12T17:24:19.822525+00:00"
+  },
+  "repositories": [
+    {
+      "name": "ijepa",
+      "owner": "kutayeroglu",
+      "full_name": "kutayeroglu/ijepa",
+      "description": "Official codebase for I-JEPA, the Image-based Joint-Embedding Predictive Architecture. First outlined in the CVPR paper, \"Self-supervised learning from images with a joint-embedding predictive architecture.\"",
+      "html_url": "https://github.com/kutayeroglu/ijepa",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "language": "Python",
+      "language_color": "#3572A5"
+    },
+    {
+      "name": "antibiomimetic-texture-vs-shape",
+      "owner": "kutayeroglu",
+      "full_name": "kutayeroglu/antibiomimetic-texture-vs-shape",
+      "description": "Investigate how the proportion of \"early visual experience\" (blurry, achromatic inputs) influences the network's resulting organization and behavior - The original study used blurry, achromatic inputs for the first half of the epochs",
+      "html_url": "https://github.com/kutayeroglu/antibiomimetic-texture-vs-shape",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Jupyter Notebook",
+      "language_color": "#DA5B0B"
+    }
+  ]
+}
