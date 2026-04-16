@@ -12,4 +12,19 @@ children:
     permalink: /flow/
 ---
 
-<p>This is a placeholder page for Flow content.</p>
+<h2>DOOM Shareware (1993)</h2>
+<p>Play the original shareware episode of DOOM right in the browser.</p>
+
+<iframe
+  src="https://archive.org/embed/msdos_DOOM_1993"
+  width="100%"
+  height="700"
+  frameborder="0"
+  webkitallowfullscreen="true"
+  mozallowfullscreen="true"
+  allowfullscreen
+></iframe>
+
+<p>If the embed does not load, open it directly on
+<a href="https://archive.org/details/msdos_DOOM_1993">Internet Archive</a>.
+</p>
