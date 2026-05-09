@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-You can play doom in [flow](https://kutayeroglu.github.io/flow/).
+You can now play doom in [flow](https://kutayeroglu.github.io/flow/).
 
