@@ -7,10 +7,7 @@ nav: true
 nav_order: 6
 ---
 
-**Current**
-
-- [Project Development in Software Engineering (CmpE 354)](https://cmpe.bogazici.edu.tr/courses/cmpe354/)
-
 **Past**
 
-- [Project Development in Software Engineering (CmpE 451)](https://cmpe.bogazici.edu.tr/courses/cmpe451/)
+- [Project Development in Software Engineering (CmpE 354)](https://cmpe.bogazici.edu.tr/courses/cmpe354/) — Spring 2026
+- [Project Development in Software Engineering (CmpE 451)](https://cmpe.bogazici.edu.tr/courses/cmpe451/) — Fall 2025
