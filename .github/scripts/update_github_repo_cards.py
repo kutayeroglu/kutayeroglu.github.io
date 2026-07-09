@@ -82,10 +82,12 @@ def fetch_pinned(cfg: dict, token: str, max_repos: int) -> list[dict]:
         print("github_repo_cards.source=pinned requires github_users in _data/repositories.yml", file=sys.stderr)
         return []
     login = users[0]
+    # GitHub allows at most 6 pinned repositories on a profile.
+    first = max(1, min(max_repos, 6))
     q = """
-    query($login: String!) {
+    query($login: String!, $first: Int!) {
       user(login: $login) {
-        pinnedItems(first: 6, types: REPOSITORY) {
+        pinnedItems(first: $first, types: REPOSITORY) {
           nodes {
             ... on Repository {
               name
@@ -101,7 +103,7 @@ def fetch_pinned(cfg: dict, token: str, max_repos: int) -> list[dict]:
       }
     }
     """
-    data = graphql(q, {"login": login}, token)
+    data = graphql(q, {"login": login, "first": first}, token)
     if data.get("errors"):
         print(json.dumps(data["errors"], indent=2), file=sys.stderr)
         return []

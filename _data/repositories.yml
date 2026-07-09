@@ -5,11 +5,12 @@ github_users:
 #   GITHUB_TOKEN=ghp_xxx python3 .github/scripts/update_github_repo_cards.py
 # or use Actions: "Update GitHub repo cards data".
 github_repo_cards:
-  source: manual # pinned = GitHub profile pins (GraphQL); manual = use github_repos below
+  source: pinned # pinned = GitHub profile pins (GraphQL); manual = use github_repos below
   max_repos: 6
 
 repo_description_lines_max: 2
 
+# Fallback if pinned fetch fails (or when source: manual).
 github_repos:
-  - kutayeroglu/ijepa
+  - kutayeroglu/multinoise-ijepa
   - kutayeroglu/antibiomimetic-texture-vs-shape

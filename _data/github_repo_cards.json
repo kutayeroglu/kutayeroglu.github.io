@@ -1,19 +1,19 @@
 {
   "meta": {
-    "source": "manual",
-    "updated_at": "2026-07-06T12:02:55.161154+00:00"
+    "source": "pinned",
+    "updated_at": "2026-07-09T17:16:00+00:00"
   },
   "repositories": [
     {
-      "name": "ijepa",
+      "name": "multinoise-ijepa",
       "owner": "kutayeroglu",
-      "full_name": "kutayeroglu/ijepa",
-      "description": "Official codebase for I-JEPA, the Image-based Joint-Embedding Predictive Architecture. First outlined in the CVPR paper, \"Self-supervised learning from images with a joint-embedding predictive architecture.\"",
-      "html_url": "https://github.com/kutayeroglu/ijepa",
-      "stargazers_count": 1,
+      "full_name": "kutayeroglu/multinoise-ijepa",
+      "description": "Official codebase for Multi-noise masking for I-JEPA. First outlined in the SIU paper, \"Noise-guided Masking for Image-based Joint-Embedding Predictive Architectures\" ",
+      "html_url": "https://github.com/kutayeroglu/multinoise-ijepa",
+      "stargazers_count": 0,
       "forks_count": 0,
       "language": "Python",
-      "language_color": null
+      "language_color": "#3572A5"
     },
     {
       "name": "antibiomimetic-texture-vs-shape",
@@ -24,7 +24,18 @@
       "stargazers_count": 0,
       "forks_count": 0,
       "language": "Jupyter Notebook",
-      "language_color": null
+      "language_color": "#DA5B0B"
+    },
+    {
+      "name": "bounpilab.github.io",
+      "owner": "bounpilab",
+      "full_name": "bounpilab/bounpilab.github.io",
+      "description": "Website for Perceptual Intelligence Laboratory in Boğaziçi University Computer Engineering Department",
+      "html_url": "https://github.com/bounpilab/bounpilab.github.io",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "language": "Astro",
+      "language_color": "#ff5a03"
     }
   ]
 }
