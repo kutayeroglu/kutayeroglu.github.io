@@ -21,11 +21,6 @@ announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
 I work as a Graduate Research & Teaching Assistant at [Computer Engineering Department at Boğaziçi University](https://cmpe.bogazici.edu.tr/). Currently, I am pursuing a M.Sc. degree in Computer Engineering while serving as a teaching assistant for [Project Development in Software Engineering](https://cmpe.bogazici.edu.tr/courses/cmpe354/) course.

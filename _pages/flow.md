@@ -6,8 +6,6 @@ nav: true
 nav_order: 99
 dropdown: true
 children:
-  - title: blog
-    permalink: /blog/
   - title: flow
     permalink: /flow/
 ---
