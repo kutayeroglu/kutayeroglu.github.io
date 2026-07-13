@@ -7,3 +7,30 @@
   width: 2048
   height: 1536
   class: span-6 tall
+
+- title: Unlimited Sangrias
+  image: assets/img/arts/unlimited-sangrias.jpg
+  alt: Whiteboard sketch of a tree creature and a snail-cannon; speech bubble reads "This one's for a SPA resort with unlimited sangrias"
+  caption: Marker sketch on whiteboard — SPA resort pitch.
+  date: 12-06-26
+  width: 2048
+  height: 1536
+  class: span-6 tall
+
+- title: Cereyan
+  image: assets/img/arts/cereyan.jpg
+  alt: Whiteboard sketch labeled PiLAB kapısı and CEREYAN? with two characters
+  caption: Marker sketch on whiteboard — PiLAB door draft.
+  date: 14-05-26
+  width: 2048
+  height: 1536
+  class: span-6 tall
+
+- title: Relief
+  image: assets/img/arts/relief.jpg
+  alt: Whiteboard sketch of two long-nosed characters, one spraying the other
+  caption: Marker sketch on whiteboard — relief scene.
+  date: 02-04-26
+  width: 2048
+  height: 1536
+  class: span-6 tall
