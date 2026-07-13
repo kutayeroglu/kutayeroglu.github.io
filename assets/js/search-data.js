@@ -37,6 +37,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/flow/";
               },
+            },{id: "dropdown-arts",
+              title: "arts",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/arts/";
+              },
             },{id: "news-i-started-pursuing-my-m-sc-in-computer-engineering-at-bogazici-university",
           title: 'I started pursuing my M.Sc. in Computer Engineering at Bogazici University.',
           description: "",
