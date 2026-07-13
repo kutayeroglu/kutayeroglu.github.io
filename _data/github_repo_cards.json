@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "pinned",
-    "updated_at": "2026-07-09T17:18:57.596477+00:00"
+    "updated_at": "2026-07-13T10:58:33.668932+00:00"
   },
   "repositories": [
     {
@@ -32,7 +32,7 @@
       "full_name": "bounpilab/bounpilab.github.io",
       "description": "Website for Perceptual Intelligence Laboratory in Bo\u011fazi\u00e7i University Computer Engineering Department",
       "html_url": "https://github.com/bounpilab/bounpilab.github.io",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 0,
       "language": "Astro",
       "language_color": "#ff5a03"
