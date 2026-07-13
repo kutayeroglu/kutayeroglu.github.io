@@ -8,6 +8,8 @@ dropdown: true
 children:
   - title: flow
     permalink: /flow/
+  - title: arts
+    permalink: /arts/
 ---
 
 <h2>DOOM Shareware (1993)</h2>

@@ -1,0 +1,9 @@
+# Artworks shown on /arts/. Add new entries here and place images under assets/img/arts/.
+- title: The Most Precious
+  image: assets/img/arts/the-most-precious.jpg
+  alt: Whiteboard sketch of two creatures; speech bubble reads "You have damaged the most precious"
+  caption: Marker sketch on whiteboard — dialogue study.
+  date: 12-06-26
+  width: 2048
+  height: 1536
+  class: span-6 tall
