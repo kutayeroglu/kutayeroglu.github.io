@@ -2,6 +2,13 @@
 
 This is my personal website, built with [al-folio](https://github.com/alshedivat/al-folio), a Jekyll theme for academics.
 
+## Running locally
+Just run:
+```
+docker compose up
+```
+Then open http://localhost:8080
+
 ## Arts gallery
 
 The `/arts/` page is driven by `_data/arts.yml` and image files in `assets/img/arts/`.
