@@ -1,0 +1,17 @@
+{% assign active_slug = site.data.active_insight.slug %}
+{% assign insight = site.insights | where: "slug", active_slug | first %}
+{% unless insight %}
+  {% assign insight = site.insights | first %}
+{% endunless %}
+
+{% if insight %}
+  <div class="daily-insight">
+    <h2>Today’s insight</h2>
+    <blockquote>
+      {{ insight.content }}
+      {% if insight.attribution %}
+        <footer class="daily-insight-attribution">— {{ insight.attribution }}</footer>
+      {% endif %}
+    </blockquote>
+  </div>
+{% endif %}

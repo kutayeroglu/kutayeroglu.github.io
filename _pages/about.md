@@ -16,6 +16,7 @@ profile:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+daily_insight: true # includes today's insight from _insights/ via _data/active_insight.yml
 
 announcements:
   enabled: true # includes a list of news items

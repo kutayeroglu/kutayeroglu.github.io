@@ -148,6 +148,8 @@ collections:
     defaults:
       layout: post
     output: true
+  insights:
+    output: false
   projects:
     output: true
 
