@@ -44,7 +44,22 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/arts/";
               },
-            },{id: "news-i-started-pursuing-my-m-sc-in-computer-engineering-at-bogazici-university",
+            },{id: "insights-airplane-engine",
+          title: 'Airplane Engine',
+          description: "",
+          section: "Insights",handler: () => {
+              window.location.href = "/insights/airplane-engine/";
+            },},{id: "insights-guru-in-creative-arts",
+          title: 'Guru In Creative Arts',
+          description: "",
+          section: "Insights",handler: () => {
+              window.location.href = "/insights/guru-in-creative-arts/";
+            },},{id: "insights-small-projects-snowball",
+          title: 'Small Projects Snowball',
+          description: "",
+          section: "Insights",handler: () => {
+              window.location.href = "/insights/small-projects-snowball/";
+            },},{id: "news-i-started-pursuing-my-m-sc-in-computer-engineering-at-bogazici-university",
           title: 'I started pursuing my M.Sc. in Computer Engineering at Bogazici University.',
           description: "",
           section: "News",},{id: "news-i-started-working-as-a-graduate-research-and-teaching-assistant-at-the-computer-engineering-department-at-bogazici-university",
