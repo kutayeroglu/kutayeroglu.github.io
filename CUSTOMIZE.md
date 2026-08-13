@@ -8,7 +8,6 @@ Here we will give you some tips on how to customize the website. One important t
   - [Project structure](#project-structure)
   - [Configuration](#configuration)
   - [Modifying the CV information](#modifying-the-cv-information)
-  - [Modifying the user and repository information](#modifying-the-user-and-repository-information)
   - [Creating new pages](#creating-new-pages)
   - [Creating new blog posts](#creating-new-blog-posts)
   - [Creating new projects](#creating-new-projects)
@@ -25,7 +24,6 @@ Here we will give you some tips on how to customize the website. One important t
     - [Removing the news section](#removing-the-news-section)
     - [Removing the projects page](#removing-the-projects-page)
     - [Removing the publications page](#removing-the-publications-page)
-    - [Removing the repositories page](#removing-the-repositories-page)
     - [You can also remove pages through commenting out front-matter blocks](#you-can-also-remove-pages-through-commenting-out-front-matter-blocks)
   - [Adding Token for Lighthouse Badger](#adding-token-for-lighthouse-badger)
     - [Personal Access Token (fine-grained) Permissions for Lighthouse Badger:](#personal-access-token-fine-grained-permissions-for-lighthouse-badger)
@@ -54,7 +52,6 @@ The project is structured as follows, focusing on the main components that you w
 ├── 📄 _config.yml: the configuration file of the template
 ├── 📂 _data/: contains some of the data used in the template
 │   ├── 📄 cv.yml: CV in YAML format, used when assets/json/resume.json is not found
-│   ├── 📄 repositories.yml: users and repositories info in YAML format
 │   └── 📄 socials.yml: your social media and contact info in YAML format
 ├── 📂 _includes/: contains code parts that are included in the main HTML file
 │   └── 📄 news.liquid: defines the news section layout in the about page
@@ -86,10 +83,6 @@ All changes made to this file are only visible after you rebuild the website. Th
 There are currently 2 different ways of generating the CV page content. The first one is by using a json file located in [assets/json/resume.json](assets/json/resume.json). It is a [known standard](https://jsonresume.org/) for creating a CV programmatically. The second one, currently used as a fallback when the json file is not found, is by using a yml file located in [\_data/cv.yml](_data/cv.yml). This was the original way of creating the CV page content and since it is more human readable than a json file we decided to keep it as an option.
 
 What this means is, if there is no resume data defined in [\_config.yml](_config.yml) and loaded via a json file, it will load the contents of [\_data/cv.yml](_data/cv.yml). If you want to use the [\_data/cv.yml](_data/cv.yml) file as the source of your CV, you must delete the [assets/json/resume.json](assets/json/resume.json) file.
-
-## Modifying the user and repository information
-
-The user and repository information is defined in [\_data/repositories.yml](_data/repositories.yml). You can add as many users and repositories as you want. Both informations are used in the `repositories` section.
 
 ## Creating new pages
 
@@ -274,13 +267,6 @@ You can also:
 - delete [\_plugins/hide-custom-bibtex.rb](_plugins/hide-custom-bibtex.rb)
 - delete [\_plugins/inspirehep-citations.rb](_plugins/inspirehep-citations.rb)
 - remove the `jekyll-scholar` gem from the [Gemfile](Gemfile) and the `plugins` section in [\_config.yml](_config.yml)
-
-### Removing the repositories page
-
-To remove the repositories, you can:
-
-- delete the repositories page [\_pages/repositories.md](_pages/repositories.md)
-- delete [\_includes/repository/](_includes/repository/) directory
 
 ### You can also remove pages through commenting out front-matter blocks
 
