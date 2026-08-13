@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pick today's insight slug (UTC day modulo) and write _data/active_insight.yml."""
+"""Pick this week's insight slug (UTC ISO week modulo) and write _data/active_insight.yml."""
 
 from __future__ import annotations
 
@@ -17,9 +17,9 @@ def insight_slugs() -> list[str]:
     return [f.stem for f in files]
 
 
-def utc_day_index() -> int:
-    now = datetime.now(timezone.utc)
-    return int(now.timestamp() // 86400)
+def utc_week_index() -> int:
+    iso = datetime.now(timezone.utc).isocalendar()
+    return iso.year * 53 + iso.week
 
 
 def main() -> int:
@@ -28,10 +28,10 @@ def main() -> int:
         print(f"No insight markdown files found in {INSIGHTS_DIR}", file=sys.stderr)
         return 1
 
-    slug = slugs[utc_day_index() % len(slugs)]
+    slug = slugs[utc_week_index() % len(slugs)]
     content = (
         "# Slug of the insight shown on the homepage (basename of _insights/<slug>.md).\n"
-        "# Updated daily by .github/workflows/update-daily-insight.yml\n"
+        "# Updated weekly by .github/workflows/update-weekly-insight.yml\n"
         f"slug: {slug}\n"
     )
 

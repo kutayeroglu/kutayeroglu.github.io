@@ -38,15 +38,15 @@ The `/arts/` page is driven by `_data/arts.yml` and image files in `assets/img/a
 1. Delete that entry from `_data/arts.yml`.
 2. Optionally delete the file under `assets/img/arts/`.
 
-## Daily insight
+## Weekly insight
 
-The homepage “Today’s insight” section is driven by markdown files in `_insights/` and the active slug in `_data/active_insight.yml`. A GitHub Actions cron (`.github/workflows/update-daily-insight.yml`) rotates the slug once per day (00:00 UTC).
+The homepage “This week’s insight” section is driven by markdown files in `_insights/` and the active slug in `_data/active_insight.yml`. A GitHub Actions cron (`.github/workflows/update-weekly-insight.yml`) rotates the slug once per week (Monday 00:00 UTC).
 
 ### Add an insight
 
 1. Add `_insights/<slug>.md` with optional `attribution` front matter and the insight body.
 2. The next cron run (or a manual workflow dispatch) will include it in the rotation.
 
-### Force today’s insight
+### Force this week’s insight
 
 Edit `_data/active_insight.yml` and set `slug` to the basename of the desired file (without `.md`).

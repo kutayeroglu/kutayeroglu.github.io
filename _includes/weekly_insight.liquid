@@ -5,12 +5,12 @@
 {% endunless %}
 
 {% if insight %}
-  <div class="daily-insight">
-    <h2>Today’s insight</h2>
+  <div class="weekly-insight">
+    <h2>This week’s insight</h2>
     <blockquote>
       {{ insight.content }}
       {% if insight.attribution %}
-        <footer class="daily-insight-attribution">— {{ insight.attribution }}</footer>
+        <footer class="weekly-insight-attribution">— {{ insight.attribution }}</footer>
       {% endif %}
     </blockquote>
   </div>

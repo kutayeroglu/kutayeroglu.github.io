@@ -1,9 +1,9 @@
-name: Update daily insight
+name: Update weekly insight
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * 1" # Monday 00:00 UTC
 
 permissions:
   contents: write
@@ -21,7 +21,7 @@ jobs:
           python-version: "3.12"
 
       - name: Refresh _data/active_insight.yml
-        run: python3 .github/scripts/update_daily_insight.py
+        run: python3 .github/scripts/update_weekly_insight.py
 
       - name: Commit if changed
         run: |
@@ -31,6 +31,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to active insight."
           else
-            git commit -m "chore: rotate daily insight"
+            git commit -m "chore: rotate weekly insight"
             git push
           fi
