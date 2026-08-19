@@ -15,7 +15,7 @@ profile:
     <p>Türkiye</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: true # includes the contact note; social icons are in the navbar when enable_navbar_social is true
 weekly_insight: true # includes this week's insight from _insights/ via _data/active_insight.yml
 
 announcements:

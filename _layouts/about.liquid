@@ -72,7 +72,9 @@ layout: default
     <!-- Social -->
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
+        {% unless site.enable_navbar_social %}
+          <div class="contact-icons">{% include social.liquid %}</div>
+        {% endunless %}
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
