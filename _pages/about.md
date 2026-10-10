@@ -16,7 +16,7 @@ profile:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # drop the bottom contact note; social icons stay in the navbar
-weekly_insight: true # includes this week's insight from _insights/ via _data/active_insight.yml
+weekly_insight: false # includes this week's insight from _insights/ via _data/active_insight.yml
 
 announcements:
   enabled: true # includes a list of news items
@@ -24,6 +24,6 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
 
-I work as a Graduate Research & Teaching Assistant at [Computer Engineering Department at Boğaziçi University](https://cmpe.bogazici.edu.tr/). Currently, I am pursuing a M.Sc. degree in Computer Engineering while serving as a teaching assistant for [Project Development in Software Engineering](https://cmpe.bogazici.edu.tr/courses/cmpe354/) course.
+I am a PhD student in Computer Engineering at Boğaziçi University and a teaching assistant in the same department.
 
-My objective is to advance 'intelligence' of computers to uncover more of the unknowns of our world. Currently, my work focuses on self-supervised representation learning as a pathway to building more scalable and perceptively aware intelligent systems.
+I am exploring robust deepfake detection. I am also interested in visual representation learning and biomimetic deep learning.
