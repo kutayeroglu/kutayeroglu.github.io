@@ -8,11 +8,7 @@ profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Office: CMPE 27</p>
-    <p>Boğaziçi University</p>
-    <p>34342 Bebek/Istanbul</p>
-    <p>Türkiye</p>
+  more_info: # HTML under the photo, for example <p>Office: CMPE 27</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # drop the bottom contact note; social icons stay in the navbar
