@@ -40,9 +40,9 @@ The `/arts/` page is driven by `_data/arts.yml` and image files in `assets/img/a
 
 ## Weekly insight
 
-The homepage “This week’s insight” section is driven by markdown files in `_insights/` and the active slug in `_data/active_insight.yml`. A GitHub Actions cron (`.github/workflows/update-weekly-insight.yml`) advances to the next insight once per week (Monday 00:00 UTC).
+The homepage “This week’s insight” section is off (`weekly_insight: false` in `_pages/about.md`). Markdown files in `_insights/` and the active slug in `_data/active_insight.yml` are still there. The weekly GitHub Actions cron in `.github/workflows/update-weekly-insight.yml` is commented out, so it no longer advances the slug. Uncomment the `schedule` block to turn the Monday 00:00 UTC rotation back on.
 
-Rotation follows each file’s `order` front matter (lowest first). Equal `order` values break ties alphabetically by slug. After the highest `order`, it wraps to the lowest. Each successful job run advances one step, including a manual workflow dispatch.
+Rotation follows each file’s `order` front matter (lowest first). Equal `order` values break ties alphabetically by slug. After the highest `order`, it wraps to the lowest. A manual workflow dispatch still advances one step.
 
 ### Add an insight
 

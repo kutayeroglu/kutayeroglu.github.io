@@ -2,8 +2,8 @@ name: Update weekly insight
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * 1" # Monday 00:00 UTC
+  # schedule: # off while weekly_insight is false in _pages/about.md
+  #   - cron: "0 0 * * 1" # Monday 00:00 UTC
 
 permissions:
   contents: write
