@@ -7,6 +7,10 @@ nav: true
 nav_order: 6
 ---
 
+**Current**
+
+- [Introduction to Computing (CmpE 150)](https://cmpe.bogazici.edu.tr/courses/cmpe150/) — Fall 2026
+
 **Past**
 
 - [Project Development in Software Engineering (CmpE 354)](https://cmpe.bogazici.edu.tr/courses/cmpe354/) — Spring 2026
